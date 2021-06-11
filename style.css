@@ -1,0 +1,312 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+
+nav
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+    height: max-content;
+    box-shadow: 5px 0px 10px grey;
+    position: fixed;
+    opacity: 0.8;
+}
+.nav-active
+{
+    transform: translateX(0%);
+}
+@keyframes navLinkFade
+{
+    from
+    {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to
+    {
+        opacity: 1;
+        transform: translateX(50px);
+    }
+}
+.logo
+{
+    
+    text-transform: uppercase;
+    font-weight: bolder;
+    letter-spacing: 5px;
+    font-size: 22px;
+    font-family: 'Roboto Mono', monospace;
+    /* border: 1px solid black; */
+    
+}
+.logo a
+{
+    color: gold;
+    text-decoration: none;
+}
+ul
+{
+    display: flex;
+    width:40%;
+    justify-content: space-around;
+    height: max-content;
+  
+    
+
+}
+ul li
+{
+    list-style: none;
+    padding: 3% 2%;
+}
+ul li a
+{
+    
+    color: white;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 14px;
+    font-family: 'Fira Sans', sans-serif;
+    text-transform: uppercase;
+    /* border: 1px solid black; */
+    
+}
+ul li a:hover
+{
+    color: gold;
+}
+.burger
+{
+    display: none;
+    cursor: pointer;
+}
+.burger div
+{
+    width: 25px;
+    height: 3px;
+    margin: 5px;
+    background-color: white;
+    transition: all 0.3s ease;
+    
+}
+
+
+.blockone
+{
+    height: 100vh;
+    width: 100%;
+    background-image: url(pic1.jpg);
+    background-attachment: fixed;
+    /* background-position: center; */
+    /* background-repeat: no-repeat; */
+    /* background-size: cover; */
+    
+    
+}
+.blockone p
+{
+    width: 100%;
+    height: 100vh;
+    border: 1px solid white;
+    /* z-index: -1; */
+    display:flex;
+    align-items: center;
+    overflow-y:hidden ;
+    justify-content: center;
+    
+}
+.blockone p span
+{
+    text-align: center;
+    text-transform: capitalize;
+    color: gold;
+    font-weight: bolder;
+    font-size: 70px;
+    overflow-y: hidden;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    /* transform: translateX(30%); */
+}
+
+.blocktwo
+{
+    height: max-content;
+    width: 100%;
+    /* border: 1px solid black; */
+
+}
+.blocktwo .desc
+{
+    margin: 5% 0%;
+    background-color: #dcdde1;
+    text-align: center;
+    font-family: 'Fira Sans', sans-serif;
+    padding: 5% 0%;
+    font-size: 20px;
+}
+.blocktwo .desc h1 span
+{
+    text-transform: uppercase;
+    color: gold;
+    text-shadow:2px 2px 5px black;
+}
+.blocktwo .desc p i
+{
+    font-weight: bolder;
+}
+.blocktwo .container
+{
+    padding: 5% 10%;
+}
+.blocktwo .container h1
+{
+    text-align: center;
+}
+.blocktwo .container p
+{
+    margin-top: 2%;
+    text-align: center;
+}
+.blocktwo .container p span
+{
+    font-weight: bold;
+}
+
+.farepart, .aboutpart, .servicepart
+{
+    margin: 2% 2%;
+    /* border: 1px solid black; */
+    padding: 0% 8%;
+}
+.blocktwo h1 
+{
+    text-transform: capitalize;
+}
+.blocktwo h1 span
+{
+    
+    color: gold;
+    
+}
+.blocktwo p
+{
+    letter-spacing: 1px;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 20px;
+}
+
+.blockthree
+{
+    margin-top: 5%;
+    width: 100%;
+    background-color: black;
+    padding: 20px 80px;
+    color: white;
+}
+.blockthree p
+{
+    
+    text-transform: capitalize;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 20px;
+}
+.blockthree p a
+{
+    text-decoration: none;
+    color: white;
+}
+.blockthree p a:hover
+{
+    color: gold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 764px) {
+    
+    ul
+    {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        position: absolute;
+        left: 0;
+        align-items: center;
+        height: 21.3vh;
+        top: 7vh;
+        background-color: black;
+        display: inline-block;
+        /* flex-direction: column; */
+        width: 100%;
+        transform: translateX(100%);
+        opacity: 0.8;
+        /* border: 1px solid white; */
+        /* transition: transform 0.5s ease-in; */
+        
+    }
+    ul li
+    {
+        opacity: 0;
+        text-align: center;
+        /* border: 1px solid white; */
+    }
+    .burger
+    {
+        display: block;
+    }
+
+    .blockone p span
+    {
+        font-size: 40px;
+        
+    }
+    .logo
+    {
+        padding: 4% 2%;
+    }
+
+
+
+
+  }
+
